@@ -1,0 +1,192 @@
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: -36px;
+  }
+  50% {
+    position: relative;
+    top: 0px;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes FadeInLeft {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -64px;
+  }
+  50% {
+    position: relative;
+    left: 0px;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes GoopDown {
+  0% {
+    position: relative;
+    top: -900px;
+  }
+  40% {
+    position: relative;
+    top: 0px;
+  }
+  60% {
+    position: relative;
+    top: 0px;
+    opacity: 100%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+    position: relative;
+    top: 600px;
+  }
+}
+
+@keyframes LogoAppear {
+  0% {
+    background-image: none;
+  }
+  49% {
+    background-image: none;
+  }
+  50% {
+    background-image: url(/src/assets/img/logo.png);
+  }
+  100% {
+    background-image: url(/src/assets/img/logo.png);
+  }
+}
+
+body {
+  background-color: #121212;
+  margin: 40pt;
+  margin-left: 40pt;
+}
+
+h1 {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 48pt;
+  padding-top: 10pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  animation-name: FadeIn;
+  animation-duration: 2s;
+  animation-delay: 250ms;
+  animation-fill-mode: both;
+}
+
+.subtitle {
+  font-size: 24pt;
+  padding-top: 0pt;
+  padding-bottom: 10pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  animation-name: FadeInLeft;
+  animation-duration: 3s;
+  animation-delay: 1250ms;
+  animation-fill-mode: both;
+}
+
+.panel {
+  background-color: rgba(255, 255, 255, .11);
+  margin-top: 16pt;
+  margin-bottom: 16pt;
+  padding-left: 16pt;
+  padding-right: 16pt;
+}
+
+.horizontal {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.horizontal li {
+  display: inline-block;
+  padding-right: 10pt;
+}
+
+.vertAligner {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.logoContainer {
+  margin-top: 128px;
+  margin-left: 500px;
+  vertical-align: middle;
+  height: 300px;
+}
+
+.logo {
+  padding-bottom: 128px;
+  padding-right: 128px;
+  background-image: url(/src/assets/img/logo.png);
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  animation-name: LogoAppear;
+  animation-duration: 3s;
+  animation-delay: 0ms;
+  animation-fill-mode: both;
+}
+
+.goop {
+  padding-bottom: 244px;
+  padding-right: 128px;
+  background-image: url(/src/assets/img/Goop.png);
+  width: 300px;
+  height: 571px;
+  z-index: 2;
+  animation-name: GoopDown;
+  animation-duration: 3s;
+  animation-delay: 0ms;
+  animation-fill-mode: both;
+}
+
+.IntroContainer {
+  margin-left: 50px;
+}
+
+.integrationsContainer {
+  padding-top: 5px;
+  margin-left: 16px;
+}
+
+.integrationImg {
+  width: 64px;
+  border-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  animation-name: FadeInLeft;
+  animation-duration: 3s;
+  animation-delay: 1250ms;
+  animation-fill-mode: both;
+}
