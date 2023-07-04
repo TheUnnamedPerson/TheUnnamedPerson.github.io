@@ -126,8 +126,14 @@ h2 {
   text-align: center;
 }
 
+.introSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
 .horizontal li {
-  display: inline-block;
+  display: inline;
   padding-right: 10pt;
 }
 
@@ -138,10 +144,14 @@ h2 {
 }
 
 .logoContainer {
-  margin-top: 128px;
-  margin-left: 500px;
   vertical-align: middle;
   height: 300px;
+  margin-right: 50pt;
+}
+
+.alignRight {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -172,6 +182,7 @@ h2 {
 
 .IntroContainer {
   margin-left: 50px;
+  padding-top: 50px;
 }
 
 .integrationsContainer {
@@ -189,4 +200,9 @@ h2 {
   animation-duration: 3s;
   animation-delay: 1250ms;
   animation-fill-mode: both;
+}
+
+.spacerDiv {
+  max-width: 300px;
+  flex-grow: 1;
 }
