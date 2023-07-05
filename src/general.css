@@ -1,0 +1,38 @@
+body {
+    background-color: #121212;
+}
+
+.panel {
+    background-color: rgba(255, 255, 255, .11);
+    margin-top: 16pt;
+    margin-bottom: 16pt;
+    padding-left: 16pt;
+    padding-right: 16pt;
+}
+
+.horizontal {
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal li {
+    display: inline;
+    padding-right: 10pt;
+}
+
+.vertAligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.alignRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

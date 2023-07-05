@@ -69,8 +69,7 @@
 
 body {
   background-color: #121212;
-  margin: 40pt;
-  margin-left: 40pt;
+  
 }
 
 h1 {
@@ -84,6 +83,17 @@ h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.sizedToScreen {
+  height: 80vh;
+  width: 80vw;
+  margin: 40pt;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  position: relative;
+  top: -5vh;
+  
 }
 
 .title {
@@ -129,7 +139,11 @@ h2 {
 .introSection {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  align-items: center; 
+  flex: 1;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
 }
 
 .horizontal li {
@@ -146,7 +160,8 @@ h2 {
 .logoContainer {
   vertical-align: middle;
   height: 300px;
-  margin-right: 50pt;
+  margin-right: 40pt;
+  margin-top: -100px;
 }
 
 .alignRight {
@@ -181,8 +196,7 @@ h2 {
 }
 
 .IntroContainer {
-  margin-left: 50px;
-  padding-top: 50px;
+  margin-left: 40px;
 }
 
 .integrationsContainer {
@@ -205,4 +219,11 @@ h2 {
 .spacerDiv {
   max-width: 300px;
   flex-grow: 1;
+}
+
+.infoSection {
+  margin: 40px;
+  padding-top: 40px;
+  position: absolute;
+  top: 100vh;
 }

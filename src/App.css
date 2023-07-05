@@ -1,89 +1,112 @@
-@keyframes FadeIn {
-  0% {
-    opacity: 0;
-    position: relative;
-    top: -36px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@media(prefers-reduced-motion: no-preference)
+{
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+      position: relative;
+      top: -36px;
+    }
+    50% {
+      position: relative;
+      top: 0px;
+    }
+    100% {
+      opacity: 100%;
+    }
   }
-  50% {
-    position: relative;
-    top: 0px;
+  
+  @keyframes FadeInLeft {
+    0% {
+      opacity: 0;
+      position: relative;
+      left: -64px;
+    }
+    50% {
+      position: relative;
+      left: 0px;
+    }
+    100% {
+      opacity: 100%;
+    }
   }
-  100% {
-    opacity: 100%;
+  
+  @keyframes GoopDown {
+    0% {
+      position: relative;
+      top: -900px;
+    }
+    40% {
+      position: relative;
+      top: 0px;
+    }
+    60% {
+      position: relative;
+      top: 0px;
+      opacity: 100%;
+    }
+    90% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 0%;
+      position: relative;
+      top: 600px;
+    }
+  }
+  
+  @keyframes LogoAppear {
+    0% {
+      background-image: none;
+    }
+    49% {
+      background-image: none;
+    }
+    50% {
+      background-image: url(/src/assets/img/logo.png);
+    }
+    100% {
+      background-image: url(/src/assets/img/logo.png);
+    }
   }
 }
 
-@keyframes FadeInLeft {
-  0% {
-    opacity: 0;
-    position: relative;
-    left: -64px;
+@media(prefers-reduced-motion: reduce)
+{
+  
+  @keyframes GoopDown {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 0%;
+    }
   }
-  50% {
-    position: relative;
-    left: 0px;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes GoopDown {
-  0% {
-    position: relative;
-    top: -900px;
-  }
-  40% {
-    position: relative;
-    top: 0px;
-  }
-  60% {
-    position: relative;
-    top: 0px;
-    opacity: 100%;
-  }
-  90% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 0%;
-    position: relative;
-    top: 600px;
-  }
-}
-
-@keyframes LogoAppear {
-  0% {
-    background-image: none;
-  }
-  49% {
-    background-image: none;
-  }
-  50% {
-    background-image: url(/src/assets/img/logo.png);
-  }
-  100% {
-    background-image: url(/src/assets/img/logo.png);
-  }
-}
-
-body {
-  background-color: #121212;
-  margin: 40pt;
-  margin-left: 40pt;
 }
 
 h1 {
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto Slab', serif;
   margin-bottom: 0;
 }
 
 h2 {
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto Slab', serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.sizedToScreen {
+  height: 80vh;
+  width: 80vw;
+  margin: 40pt;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  position: relative;
+  top: -5vh;
+  
 }
 
 .title {
@@ -109,49 +132,21 @@ h2 {
   animation-fill-mode: both;
 }
 
-.panel {
-  background-color: rgba(255, 255, 255, .11);
-  margin-top: 16pt;
-  margin-bottom: 16pt;
-  padding-left: 16pt;
-  padding-right: 16pt;
-}
-
-.horizontal {
-  margin: 0;
-  padding: 0;
-}
-
-.center {
-  text-align: center;
-}
-
 .introSection {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
-}
-
-.horizontal li {
-  display: inline;
-  padding-right: 10pt;
-}
-
-.vertAligner {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  align-items: center; 
+  flex: 1;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
 }
 
 .logoContainer {
   vertical-align: middle;
   height: 300px;
-  margin-right: 50pt;
-}
-
-.alignRight {
-  display: flex;
-  justify-content: flex-end;
+  margin-right: 40pt;
+  margin-top: -100px;
 }
 
 .logo {
@@ -181,8 +176,7 @@ h2 {
 }
 
 .IntroContainer {
-  margin-left: 50px;
-  padding-top: 50px;
+  margin-left: 40px;
 }
 
 .integrationsContainer {
@@ -205,4 +199,17 @@ h2 {
 .spacerDiv {
   max-width: 300px;
   flex-grow: 1;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.infoSection {
+  margin: 40px;
+  padding-top: 40px;
+  position: absolute;
+  top: 110vh;
+  width: 90vw;
 }

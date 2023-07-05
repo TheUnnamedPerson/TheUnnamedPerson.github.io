@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -12,6 +13,18 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => 
+  {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fadeInTop");
+    }
+  })
+})
+
+const elementsToScroll = document.querySelectorAll(".onScrollFadeIn");
+elementsToScroll.forEach((el) => observer.observe(el));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
