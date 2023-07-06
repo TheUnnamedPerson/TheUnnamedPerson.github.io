@@ -27,7 +27,7 @@ function App() {
             </span>
         </div>
         <div className="infoSection middle">
-            <div className='vertPaddingXV'>
+            <div className='vertPaddingXV center' style={{marginTop : "40px", marginBottom : "40px", }}>
                 <InfoPanel Header="Skills" Width='50vw'>
                     <div className='horizontal center'>
                         <div className='maxWidth'>
