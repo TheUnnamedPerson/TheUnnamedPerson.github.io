@@ -32,15 +32,20 @@
 }
 
 .sectionHeader {
-    font-size: 32pt;
-    padding-top: 15pt;
-    padding-bottom: 15pt;
+  font-size: 32pt;
+  padding-top: 15pt;
+  padding-bottom: 5pt;
+  text-align: center;
+}
+
+.transparent
+{
+  opacity: 0%;
 }
 
 .fadeInTop
 {
-    animation-name: FadeIn;
-    animation-duration: 2s;
-    animation-delay: 250ms;
-    animation-fill-mode: both;
+  animation-name: FadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }

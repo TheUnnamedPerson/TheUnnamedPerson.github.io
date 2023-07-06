@@ -1,0 +1,12 @@
+p{
+  margin-bottom: 0;
+}
+
+.innerBar {
+  z-index: 1;
+}
+
+.outerBar {
+  z-index: 2;
+  position: relative;
+}
