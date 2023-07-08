@@ -6,6 +6,7 @@ import handleViewport, { type InjectedViewportProps } from 'react-in-viewport';
 interface InfoPanelProps {
     Header?: string;
     Width?: string;
+    MaxWidth? : string;
 }
 
 const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) => {
@@ -22,11 +23,11 @@ const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) 
 const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 const InfoPanel: FunctionComponent<PropsWithChildren<InfoPanelProps>> = ({
-    children, Header, Width
+    children, Header, Width, MaxWidth
 }) => {
     return (
         <ViewportBlock>
-            <div className='NoFlex' style={{width : Width}}>
+            <div className='NoFlex' style={{width : Width, maxWidth : MaxWidth}}>
                 <h2 className="sectionHeader">
                     {Header}
                 </h2>

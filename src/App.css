@@ -34,16 +34,15 @@
   
   @keyframes GoopDown {
     0% {
-      position: relative;
-      top: -900px;
+      top: -100vh;
+      opacity: 100%;
     }
     40% {
-      position: relative;
-      top: 0px;
+      top: 0vh;
+      opacity: 100%;
     }
     60% {
-      position: relative;
-      top: 0px;
+      top: 0vh;
       opacity: 100%;
     }
     90% {
@@ -51,17 +50,16 @@
     }
     100% {
       opacity: 0%;
-      position: relative;
-      top: 600px;
+      top: 80vh;
     }
   }
   
   @keyframes LogoAppear {
     0% {
-      background-image: none;
+      background-image: url(/src/assets/img/empty_sized.png);
     }
     49% {
-      background-image: none;
+      background-image: url(/src/assets/img/empty_sized.png);
     }
     50% {
       background-image: url(/src/assets/img/logo.png);
@@ -89,15 +87,13 @@
   height: 80vh;
   width: 80vw;
   margin: 40pt;
-  margin-top: 0;
+  margin-top: 5vh;
   margin-bottom: 5vh;
-  position: relative;
-  top: -5vh;
   
 }
 
 .title {
-  font-size: 48pt;
+  font-size: min(min(72pt, 6.9vh), 7.9vw);
   padding-top: 10pt;
   padding-left: 10pt;
   padding-right: 10pt;
@@ -108,9 +104,8 @@
 }
 
 .subtitle {
-  font-size: 24pt;
+  font-size: min(min(36pt, 3.45vh), 3.45vw);
   padding-top: 0pt;
-  padding-bottom: 10pt;
   padding-left: 10pt;
   padding-right: 10pt;
   animation-name: FadeInLeft;
@@ -121,47 +116,55 @@
 
 .introSection {
   margin: 0;
+  margin-top: -5vh;
   width: 100vw;
   height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center; 
   background-color: black;
-  position: absolute;
-  top: -5vh;
 }
 
 .logoContainer {
-  vertical-align: middle;
-  height: 300px;
-  margin-right: 40pt;
-  margin-top: -100px;
+  display: inline-block;
+  width: 50vw;
+  height: 50vw;
+  max-width: 600px;
+  max-height: 600px;
+  margin-right: 10vw;
 }
 
 .logo {
-  padding-bottom: 128px;
-  padding-right: 128px;
   background-image: url(/src/assets/img/logo.png);
-  width: 300px;
-  height: 300px;
+  width: 50vw;
+  height: 50vw;
+  max-width: 600px;
+  max-height: 600px;
+  padding-bottom: 100%;
   z-index: 1;
   animation-name: LogoAppear;
   animation-duration: 3s;
   animation-delay: 0ms;
   animation-fill-mode: both;
+  background-size: contain;
+  overflow: visible;
+  background-repeat: no-repeat;
 }
 
 .goop {
-  padding-bottom: 244px;
-  padding-right: 128px;
+  position: relative;
   background-image: url(/src/assets/img/Goop.png);
-  width: 300px;
-  height: 571px;
+  width: 50vw;
+  height: calc(50vw * 1.9);
+  max-width: 600px;
+  max-height: calc(600px * 1.9);
   z-index: 2;
   animation-name: GoopDown;
   animation-duration: 3s;
   animation-delay: 0ms;
   animation-fill-mode: both;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .IntroContainer {
@@ -182,7 +185,5 @@
   background-color: #121212;
   margin: 0px;
   padding-top: 0px;
-  position: absolute;
-  top: 100vh;
   width: 100vw;
 }
