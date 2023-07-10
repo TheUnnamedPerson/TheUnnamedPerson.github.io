@@ -1,10 +1,10 @@
 import React, { FunctionComponent, PropsWithChildren } from 'react';
-import github from '../../assets/img/github.svg';
-import discord from '../../assets/img/discord.svg';
-import linkedin from '../../assets/img/linkedin.svg';
-import instagram from '../../assets/img/instagram.svg';
-import twitter from '../../assets/img/twitter.svg';
-import threads from '../../assets/img/threads.svg';
+import github from '../../assets/svg/github.svg';
+import discord from '../../assets/svg/discord.svg';
+import linkedin from '../../assets/svg/linkedin.svg';
+import instagram from '../../assets/svg/instagram.svg';
+import twitter from '../../assets/svg/twitter.svg';
+import threads from '../../assets/svg/threads.svg';
 import '../../general.css';
 import './Integrations.css';
 
