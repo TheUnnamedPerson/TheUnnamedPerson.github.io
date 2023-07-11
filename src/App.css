@@ -48,9 +48,13 @@
     90% {
       opacity: 0%;
     }
-    100% {
+    99% {
       opacity: 0%;
       top: 80vh;
+    }
+    100% {
+      opacity: 0%;
+      top: -100vh;
     }
   }
   

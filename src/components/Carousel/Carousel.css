@@ -1,0 +1,56 @@
+.invisible {
+    display: none;
+}
+
+.arrowButton {
+    z-index: 2;
+    background: none;
+    border: none;
+}
+
+.transitionLeft {
+    animation: translateLeft;
+    animation-duration: 0.65s;
+    animation-fill-mode: both;
+}
+
+a {
+    cursor:default;
+}
+
+@keyframes translateLeft {
+    0% {
+        transform: translateX(var(--old-Pos));
+        opacity: var(--old-Opacity);
+        display: var(--old-Display);
+    }
+    1% {
+        display: var(--Inner-Display);
+    }
+    99% {
+        display: var(--Inner-Display);
+    }
+    100% {
+        display: var(--new-Display);
+        transform: translateX(var(--new-Pos));
+        opacity: var(--new-Opacity);
+    }
+}
+
+@media(prefers-reduced-motion: reduce)
+{
+    @keyframes translateLeft {
+        0% {
+            transform: translateX(var(--old-Pos));
+            opacity: var(--old-Opacity);
+        }
+        1% {
+            transform: translateX(var(--new-Pos));
+            opacity: var(--new-Opacity);
+        }
+        100% {
+            transform: translateX(var(--new-Pos));
+            opacity: var(--new-Opacity);
+        }
+    }
+}

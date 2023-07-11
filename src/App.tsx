@@ -5,23 +5,38 @@ import './App.css';
 import Integrations from './components/Integrations/Integrations'
 import InfoPanel from './components/InfoPanel/InfoPanel'
 import Bar from './components/Bar/Bar'
-import Slideshow from './components/Slideshow/Slideshow'
+import Carousel from './components/Carousel/Carousel'
 
-import Xaml_Logo from "./assets/cs-logos/xaml.png";
-import C_Sharp_Logo from "./assets/cs-logos/c-sharp.svg";
-import Cpp_Logo from "./assets/cs-logos/c++.svg";
+import Xaml_Logo from "./assets/cs-logos/Xaml.png";
+import C_Sharp_Logo from "./assets/cs-logos/C-Sharp.svg";
+import Cpp_Logo from "./assets/cs-logos/C++.svg";
+import Java_Logo from "./assets/cs-logos/Java.svg"
+import DOT_NET_Logo from "./assets/cs-logos/.Net.svg"
+import React_Logo from "./assets/cs-logos/React.svg"
+import Unity_Logo from "./assets/cs-logos/Unity.png"
+import Avalonia_Logo from "./assets/cs-logos/Avalonia.svg"
 
 import Footer from './components/Footer/Footer'
 
 function App() {
 
     const Langs = [
-        Xaml_Logo,
         C_Sharp_Logo,
         Cpp_Logo,
+        Java_Logo,
+        DOT_NET_Logo,
+        React_Logo,
+        Xaml_Logo,
+        Unity_Logo,
+        Avalonia_Logo,
     ]
 
     const LangLinks = [
+        "",
+        "",
+        "",
+        "",
+        "",
         "",
         "",
         "",
@@ -43,14 +58,17 @@ function App() {
                 
             </span>
         </div>
-        <div className="infoSection middle">
-            <div className='vertPaddingXV center' style={{marginTop :"40px", marginBottom : "40px", }}>
-            <InfoPanel Header="Skills" Width='50vw' MaxWidth='1000px'>
-                <div className='center'>
-                    <Slideshow slides={Langs} links={LangLinks} width='7.5vw' height='7.5vw' />
+        <div className="infoSection NoFlex">
+            <div className='NoFlex'>
+                <div className='vertPaddingXV center' style={{marginTop :"40px", marginBottom : "40px", }}>
+                    <InfoPanel Header="Skills" FontSize='5vh' Width='60vw' MaxWidth='1500px'>
+                        <div className='center'>
+                            <Carousel slides={Langs} links={LangLinks} width='35vw' height='7.5vw' buttonRadius="7.5vh" countToShow={4} spacing='1vw' paddingTop='1vh' paddingBottom='5vh' paddingLeft='5vw' paddingRight='5vw' />
+                        </div>
+                    </InfoPanel>
                 </div>
-            </InfoPanel>
             </div>
+            
         </div>
         <Footer/>
     </div>

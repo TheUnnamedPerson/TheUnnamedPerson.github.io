@@ -38,6 +38,10 @@ body {
     justify-content: flex-end;
 }
 
+.inlineBlock {
+    display: inline-block;
+}
+
 .center {
     display: flex;
     justify-content: center;

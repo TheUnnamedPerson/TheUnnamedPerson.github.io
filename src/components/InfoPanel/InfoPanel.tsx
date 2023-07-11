@@ -7,6 +7,7 @@ interface InfoPanelProps {
     Header?: string;
     Width?: string;
     MaxWidth? : string;
+    FontSize?: string;
 }
 
 const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) => {
@@ -23,12 +24,12 @@ const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) 
 const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 const InfoPanel: FunctionComponent<PropsWithChildren<InfoPanelProps>> = ({
-    children, Header, Width, MaxWidth
+    children, Header, Width, MaxWidth, FontSize
 }) => {
     return (
         <ViewportBlock>
             <div className='NoFlex' style={{width : Width, maxWidth : MaxWidth}}>
-                <h2 className="sectionHeader">
+                <h2 className="sectionHeader" style={{fontSize: FontSize}}>
                     {Header}
                 </h2>
                 {children}
