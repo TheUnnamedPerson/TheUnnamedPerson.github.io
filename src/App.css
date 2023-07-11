@@ -191,3 +191,8 @@
   padding-top: 0px;
   width: 100vw;
 }
+
+.langHeader {
+  padding-top: 1vh;
+  font-size: 0.9vw;
+}

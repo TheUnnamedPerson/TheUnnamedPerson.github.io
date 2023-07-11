@@ -16,7 +16,10 @@ import React_Logo from "./assets/cs-logos/React.svg"
 import Unity_Logo from "./assets/cs-logos/Unity.png"
 import Avalonia_Logo from "./assets/cs-logos/Avalonia.svg"
 
+import AvenirProject from "./assets/img/projects/Avenir.png"
+
 import Footer from './components/Footer/Footer'
+import { relative } from 'path';
 
 function App() {
 
@@ -68,7 +71,44 @@ function App() {
                     </InfoPanel>
                 </div>
             </div>
-            
+            <div className='NoFlex'>
+                <div className='vertPaddingXV center' style={{marginTop :"40px", marginBottom : "40px", }}>
+                    <InfoPanel Header="Projects" FontSize='5vh' Width='50vw' MaxWidth='1500px'>
+                        <div className='center' style={{height: "50vh", paddingTop: "5vh", display: "inline-block"}}>
+                            <div style={{display: "inline-block"}} >
+                                <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer">
+                                    <img src={AvenirProject} style={{width: "24vw", borderStyle: "solid", borderWidth: "1vh", borderColor:"#FFFFFF", position: "relative", right: "2vw"}} />
+                                </a>
+                            </div>
+                            <div style={{height: "40vh", width: "26vw", display: "inline-block",  position: "absolute", marginRight: "1vw", marginLeft: "1vw"}} >
+                                <div className='center' style={{position: "relative", right: "2vw", top: "1vh"}}>
+                                    <div className='text-center' style={{display: "block"}} >
+                                        <h3 className='' >
+                                            Avenir Innovations
+                                        </h3>
+                                        <p style={{paddingTop: "1vh", fontSize: "0.8vw"}}>
+                                            At <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer">Avenir Innovations </a>
+                                            I oversaw the <b>Programming Department</b> as <b>Director of Programming. </b>
+                                            There, I oversaw the development of <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer"><b>The Avenir Innovations Website </b></a>
+                                            and Developed Software that <b>Allows Remote Control of a Quadrupedal Robot, </b> Software that <b>Processes LiDAR Sensor Data in Order to Put Together a Map, </b>
+                                            <b>Software that Allows Remote Monitoring of The Robot,</b> and More.
+                                        </p>
+                                        <h4 className='langHeader'>Relevent Skills</h4>
+                                        <div className='langSection' style={{display: "inline-block"}}>
+                                            <img className='langImg' src={C_Sharp_Logo}/>
+                                            <img className='langImg' src={Cpp_Logo}/>
+                                            <img className='langImg' src={DOT_NET_Logo}/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className=''>
+                            
+                        </div>
+                    </InfoPanel>
+                </div>
+            </div>
         </div>
         <Footer/>
     </div>
