@@ -20,6 +20,15 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 
+    const getFullVh = () => {
+        return (document.querySelector('#measure-vh') != null && document.querySelector('#measure-vh') != undefined) ? document.querySelector('#measure-vh')!.clientHeight : document.documentElement.clientHeight;
+    }
+    const getFullVw = () => {
+        return (document.querySelector('#measure-vh') != null && document.querySelector('#measure-vh') != undefined) ? document.querySelector('#measure-vh')!.clientWidth : document.documentElement.clientWidth;
+    }
+
+    var ViewportAspectRatio: number = getFullVw() / getFullVh();
+
     const Langs = [
         C_Sharp_Logo,
         Cpp_Logo,
@@ -44,6 +53,9 @@ function App() {
 
   return (
     <div id='rootContainer' className='NoFlex'>
+        <div style={{overflow: "hidden", height: 0}}>
+            <div id="measure-vh" style={{position: "fixed", height: "100vh", width: "100vw"}}></div>
+        </div>
         <div className="introSection sizedToScreen">
             <span className="IntroContainer">
                 <h1 className="title">Fernando Fonseca</h1>
@@ -61,9 +73,9 @@ function App() {
         <div className="infoSection NoFlex">
             <div className='NoFlex'>
                 <div className='vertPaddingXV center' style={{marginTop :"40px", marginBottom : "40px", }}>
-                    <InfoPanel Header="Skills" FontSize='5vh' Width='60vw' MaxWidth='1500px'>
+                    <InfoPanel Header="My Skills" FontSize='5vh' Width='60vw' MaxWidth='1500px'>
                         <div className='center'>
-                            <Carousel slides={Langs} links={LangLinks} width='35vw' height='7.5vw' buttonRadius="7.5vh" countToShow={4} spacing='1vw' paddingTop='1vh' paddingBottom='5vh' paddingLeft='5vw' paddingRight='5vw' />
+                            <Carousel slides={Langs} links={LangLinks} width='50vw' maxWidth='1300px' height='10vh' buttonDiameter="5vh" countToShow={(ViewportAspectRatio > 0.5) ? Math.floor((ViewportAspectRatio / 0.375) - .00001) + 1 : Math.floor((ViewportAspectRatio / 0.375) - .00001)} spacing='1vw' paddingTop='2.5vh' paddingBottom='5vh' paddingLeft='5vw' paddingRight='5vw' />
                         </div>
                     </InfoPanel>
                 </div>

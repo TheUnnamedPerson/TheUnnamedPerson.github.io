@@ -12,16 +12,19 @@ import RightArrow from '../../assets/svg/arrow-right.svg'
 
 interface CarouselProps {
     slides: string[];
-    width: string;
-    height: string;
-    links?: string[];
-    buttonRadius?: string;
-    spacing?: string;
     countToShow: number;
+    links?: string[];
+    width: string;
+    maxWidth?: string;
+    height: string;
+    maxHeight?: string;
+    buttonDiameter?: string;
+    spacing?: string;
     paddingTop?: string;
     paddingBottom?: string;
     paddingLeft?: string;
     paddingRight?: string;
+    
 }
 
 function mod (x: number, n: number): number {
@@ -30,7 +33,7 @@ function mod (x: number, n: number): number {
 };
 
 
-const Carousel = ({slides, width, height, links, buttonRadius, spacing, countToShow, paddingTop, paddingBottom, paddingLeft, paddingRight}: CarouselProps) => {
+const Carousel = ({slides, countToShow, links, width, maxWidth, height, maxHeight, buttonDiameter, spacing, paddingTop, paddingBottom, paddingLeft, paddingRight}: CarouselProps) => {
 
     const [currentIndex, SetCurrentIndex] = useState(0);
     const [previousIndex, SetPreviousIndex] = useState(0);
@@ -41,7 +44,6 @@ const Carousel = ({slides, width, height, links, buttonRadius, spacing, countToS
         width: string;
         position: number;
         link: string;
-
         constructor(_src: string = "", _h: string = "", _w: string = "", _p: number = 0, _l: string = "") {
             this.slideSrc = _src;
             this.height = _h;
@@ -52,11 +54,19 @@ const Carousel = ({slides, width, height, links, buttonRadius, spacing, countToS
 
     }
 
+    if (maxWidth == null || maxWidth == undefined) maxWidth = width;
+    if (maxHeight == null || maxHeight == undefined) maxHeight = height;
+
+    width = "min( " + width + ", " + maxWidth + " )"
+    height = "min( " + height + ", " + maxHeight + " )"
+
     var Slides: SlideClass[] = new Array(slides.length * 2);
     //var Slides: SlideClass[] = new Array(slides.length);
     var n = 0;
 
-    const SlideWidth: string = "calc( calc(" + width + " / " + countToShow.toString() + " ) - " + spacing + " )"
+    const SlideWidth: string = "calc( calc( calc(" + width + " - " + spacing + " - " + spacing + " - " + buttonDiameter + " - " + buttonDiameter + " )" + " / " + countToShow.toString() + " ) - " + spacing + " )"
+    //const SlideWidth: string = "6vw"
+    
     
     for (let i = 0; i < slides.length; i++)
     {
@@ -84,8 +94,9 @@ const Carousel = ({slides, width, height, links, buttonRadius, spacing, countToS
             return {
                 width: SlideWidth, 
                 height: SlideWidth, 
-                paddingRight: spacing, 
+                paddingRight: spacing,
                 position: "absolute", 
+                top: "calc( calc( " + height + " - " + slide.width + " ) / 2)",
                 "--old-Pos": "calc( calc( " + slide.width + " + " + spacing + " ) * " + (mod(slide.position + previousIndex + 1, Slides.length) - 1 ).toString() + " )" , 
                 "--new-Pos": "calc( calc( " + slide.width + " + " + spacing + " ) * " + (mod(slide.position + currentIndex + 1, Slides.length) - 1).toString() + " )",
                 "--old-Opacity": (mod((slide.position + previousIndex), Slides.length) + 1 > countToShow) ? "0%" : "100%",
@@ -117,14 +128,14 @@ const Carousel = ({slides, width, height, links, buttonRadius, spacing, countToS
     }
 
     return <div className="center" style={{height: height, paddingTop: paddingTop, paddingBottom: paddingBottom, paddingLeft: paddingLeft, paddingRight: paddingRight}}>
-                <button className="arrowButton" style={{width: buttonRadius, height: buttonRadius, marginRight: spacing}} onClick={() => updateIndex(currentIndex + 1)}>
-                    <img src={LeftArrow} style={{width: buttonRadius, height: buttonRadius}} />
+                <button className="arrowButton" style={{width: buttonDiameter, height: buttonDiameter}} onClick={() => updateIndex(currentIndex + 1)}>
+                    <img src={LeftArrow} style={{width: buttonDiameter, height: buttonDiameter}} />
                 </button>
-                <div className="" style={{ position: "relative", display: "inline-block",height: height, width: width}}>
+                <div className="" style={{ paddingLeft: spacing, verticalAlign: "middle" , position: "relative", display: "inline-block", height: height, width: "calc( " + width + " - " + spacing + " - " + spacing + " - " + buttonDiameter + " - " + buttonDiameter + " )" }}>
                     <Slide/>
                 </div>
-                <button className="arrowButton" style={{width: buttonRadius, height: buttonRadius, marginLeft: spacing}} onClick={() => updateIndex(currentIndex - 1)}>
-                    <img src={RightArrow} style={{width: buttonRadius, height: buttonRadius}} />
+                <button className="arrowButton" style={{width: buttonDiameter, height: buttonDiameter }} onClick={() => updateIndex(currentIndex - 1)}>
+                    <img src={RightArrow} style={{width: buttonDiameter, height: buttonDiameter}} />
                 </button>
             </div>
 }
