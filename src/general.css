@@ -1,5 +1,6 @@
 body {
     background-color: #121212;
+    overflow-x: hidden;
 }
 
 .clear{width: 100%; clear: both; height: 0px; line-height:0px;}
