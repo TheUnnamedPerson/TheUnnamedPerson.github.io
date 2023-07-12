@@ -11,7 +11,7 @@ import Xaml_Logo from "./assets/cs-logos/Xaml.png";
 import C_Sharp_Logo from "./assets/cs-logos/C-Sharp.svg";
 import Cpp_Logo from "./assets/cs-logos/C++.svg";
 import Java_Logo from "./assets/cs-logos/Java.svg"
-import DOT_NET_Logo from "./assets/cs-logos/.Net.svg"
+import DOT_NET_Logo from "./assets/cs-logos/DOT_NET.svg"
 import React_Logo from "./assets/cs-logos/React.svg"
 import Unity_Logo from "./assets/cs-logos/Unity.png"
 import Avalonia_Logo from "./assets/cs-logos/Avalonia.svg"
