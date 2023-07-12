@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b75a0f61.css",
-    "main.js": "/static/js/main.4bba889b.js",
+    "main.js": "/static/js/main.c18098fa.js",
     "static/js/787.93c5b805.chunk.js": "/static/js/787.93c5b805.chunk.js",
     "static/media/Avenir.png": "/static/media/Avenir.0601cb571fd4e5247003.png",
     "static/media/EU4-Modding-Tool.png": "/static/media/EU4-Modding-Tool.5e7181284cbe2a836ced.png",
@@ -14,7 +14,7 @@
     "static/media/Avalonia.svg": "/static/media/Avalonia.062476fec9a6a162d12c44573d55076a.svg",
     "static/media/Python.svg": "/static/media/Python.1ca8b653c1785b893f674ff37137cb08.svg",
     "static/media/Java.svg": "/static/media/Java.38de31869a5a34c44a779c241f671a9a.svg",
-    "static/media/.Net.svg": "/static/media/.Net.a62fcf996ea2935f8ccbe026b73e7c06.svg",
+    "static/media/DOT_NET.svg": "/static/media/DOT_NET.a62fcf996ea2935f8ccbe026b73e7c06.svg",
     "static/media/C++.svg": "/static/media/C++.2441702dffa95ca3c92c20816e386640.svg",
     "static/media/C-Sharp.svg": "/static/media/C-Sharp.04d9d2bb18b9781567f7340691dcc686.svg",
     "static/media/threads.svg": "/static/media/threads.806a006bfc99b9db564b07dfe198a323.svg",
@@ -27,11 +27,11 @@
     "index.html": "/index.html",
     "static/media/React.svg": "/static/media/React.fff4fd514ba20a042d2cd63734178e6a.svg",
     "main.b75a0f61.css.map": "/static/css/main.b75a0f61.css.map",
-    "main.4bba889b.js.map": "/static/js/main.4bba889b.js.map",
+    "main.c18098fa.js.map": "/static/js/main.c18098fa.js.map",
     "787.93c5b805.chunk.js.map": "/static/js/787.93c5b805.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b75a0f61.css",
-    "static/js/main.4bba889b.js"
+    "static/js/main.c18098fa.js"
   ]
 }
