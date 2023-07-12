@@ -6,10 +6,6 @@ body {
 
 .panel {
     background-color: rgba(255, 255, 255, .11);
-    margin-top: 16pt;
-    margin-bottom: 16pt;
-    padding-left: 16pt;
-    padding-right: 16pt;
 }
 
 .horizontal {
@@ -77,20 +73,20 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #dddddd;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 0;
 }
 
 h2 {
-    color: white;
+    color: #dddddd;
     font-family: 'Roboto Slab', serif;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h3 {
-    color: white;
+    color: #dddddd;
     font-family: 'Roboto Slab', serif;
     margin-top: 0;
     margin-bottom: 0;
@@ -100,7 +96,7 @@ h3 {
 }
 
 h4 {
-    color: white;
+    color: #dddddd;
     font-family: 'Roboto Slab', serif;
     margin-top: 0;
     margin-bottom: 0;
@@ -110,11 +106,14 @@ h4 {
 }
 
 p {
-    color: white;
+    color: #dddddd;
     font-family: 'Roboto Slab', serif;
-    font-size: 18pt;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+b {
+    color: #ffffff
 }
 
 .text-center {
@@ -138,14 +137,4 @@ b {
     border-color: white;
     border-radius: 100%;
     border-style: solid;
-}
-
-.langImg {
-    width: 2vw;
-    height: 2vw;
-    padding-right: 0.75vw;
-}
-
-.langSection {
-    padding-top: 1vh;
 }

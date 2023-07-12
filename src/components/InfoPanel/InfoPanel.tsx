@@ -8,13 +8,14 @@ interface InfoPanelProps {
     Width?: string;
     MaxWidth? : string;
     FontSize?: string;
+    direction?: 'ltr' | 'rtl';
 }
 
 const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) => {
-    const { children, inViewport, forwardedRef } = props;
+    const { children, forwardedRef, enterCount } = props;
     return (
         <div className="viewport-block" ref={forwardedRef}>
-            <div className={inViewport ? "panel middle fadeInTop" : "panel middle transparent"}>
+            <div className={enterCount > 0 ? "panel middle fadeInTop" : "panel middle transparent"}>
                 {children}
             </div>
         </div>
@@ -24,11 +25,12 @@ const Block = (props: PropsWithChildren<InjectedViewportProps<HTMLDivElement>>) 
 const ViewportBlock = handleViewport(Block, /** options: {}, config: {} **/);
 
 const InfoPanel: FunctionComponent<PropsWithChildren<InfoPanelProps>> = ({
-    children, Header, Width, MaxWidth, FontSize
+    children, Header, Width, MaxWidth, FontSize, direction
 }) => {
+    if (direction == null || direction == undefined) direction = 'ltr';
     return (
         <ViewportBlock>
-            <div className='NoFlex' style={{width : Width, maxWidth : MaxWidth}}>
+            <div className='NoFlex' style={{width : Width, maxWidth : MaxWidth, direction: direction}}>
                 <h2 className="sectionHeader" style={{fontSize: FontSize}}>
                     {Header}
                 </h2>

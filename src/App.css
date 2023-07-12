@@ -194,5 +194,29 @@
 
 .langHeader {
   padding-top: 1vh;
-  font-size: 0.9vw;
+  font-size: max(1.2vw, 12pt);
+}
+
+.ProjectHeader {
+  font-size: max(1.5vw, 16pt);
+}
+
+.ProjectText {
+  padding-top: 1vh;
+  font-size: max(0.8vw, 8pt);
+}
+
+.ProjectText {
+  padding-top: 1vh;
+  font-size: max(1vw, 10pt);
+}
+
+.langImg {
+  width: max(2vw, 30px);
+  height: max(2vw, 30px);
+  padding-right: max(0.75vw, 15px);
+}
+
+.langSection {
+  padding-top: 1vh;
 }

@@ -84,7 +84,7 @@ const Carousel = ({slides, countToShow, links, width, maxWidth, height, maxHeigh
         Slides[i].height = SlideWidth;
         Slides[i].width = SlideWidth;
         Slides[i].position = i;
-        if ((links != null && links != undefined) && i < links!.length) Slides[i].link = links![i - slides.length];
+        if ((links != null && links != undefined) && (i - slides.length) < links!.length) Slides[i].link = links![i - slides.length];
     }
 
     const Slide = () => 
