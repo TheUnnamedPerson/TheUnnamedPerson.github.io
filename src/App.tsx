@@ -215,7 +215,7 @@ function App() {
                                             Other Projects
                                         </h3>
                                         <p className='ProjectText'>
-                                            I have various other projects that I have worked on. I did <b>Levels 1-4 of Google's Foo Bar in Java, </b>
+                                            I have various other projects that I have worked on. I did <b>Levels 1-4 of Google's Foobar in Java, </b>
                                             I have made a
                                             <a href="https://github.com/TheUnnamedPerson/Canvas-plus-plus" target="_blank" rel="noopener noreferrer">
                                             <b> Website</b> that interacts with Canvas LMS's <b>RestfulAPI</b> that handles <b>account data </b>using<b> Django, </b></a>
