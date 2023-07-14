@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a739765.css",
-    "main.js": "/static/js/main.c18098fa.js",
+    "main.css": "/static/css/main.2ebefdab.css",
+    "main.js": "/static/js/main.765a960a.js",
     "static/js/787.93c5b805.chunk.js": "/static/js/787.93c5b805.chunk.js",
     "static/media/Avenir.png": "/static/media/Avenir.0601cb571fd4e5247003.png",
     "static/media/EU4-Modding-Tool.png": "/static/media/EU4-Modding-Tool.5e7181284cbe2a836ced.png",
@@ -26,12 +26,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.eeab40fe115bca729675de44566c6401.svg",
     "index.html": "/index.html",
     "static/media/React.svg": "/static/media/React.fff4fd514ba20a042d2cd63734178e6a.svg",
-    "main.1a739765.css.map": "/static/css/main.1a739765.css.map",
-    "main.c18098fa.js.map": "/static/js/main.c18098fa.js.map",
+    "main.2ebefdab.css.map": "/static/css/main.2ebefdab.css.map",
+    "main.765a960a.js.map": "/static/js/main.765a960a.js.map",
     "787.93c5b805.chunk.js.map": "/static/js/787.93c5b805.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a739765.css",
-    "static/js/main.c18098fa.js"
+    "static/css/main.2ebefdab.css",
+    "static/js/main.765a960a.js"
   ]
 }
