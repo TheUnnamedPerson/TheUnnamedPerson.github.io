@@ -92,9 +92,9 @@ function App() {
                                 <div className='center'>
                                     <div className='text-center' style={{display: "block"}} >
                                         <p className='ProjectText'>
-                                            I am a <b>Software Developer </b> specializing in <b>.NET</b> and <b>C#, </b>
-                                            with plenty of experience in other languanges and frameworks such as <b>C++, Java, and React. </b>
-                                            I natively speak <b>English and Spanish,</b> and also took 4 years of <b> Japanese.</b>
+                                            I am a <b>Software Developer </b>centered out of <b>Los Angeles County</b> specializing in <b>.NET</b> and <b>C# </b>
+                                            with plenty of experience in other languages and frameworks such as <b>C++, Java, and React. </b>
+                                            I natively speak <b>English, </b><b>Spanish,</b> and took 4 years of <b> Japanese.</b>
                                         </p>
                                     </div>
                                 </div>
@@ -130,12 +130,14 @@ function App() {
                                         <p className='ProjectText'>
                                             At <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer"><b>Avenir Innovations </b></a>
                                             I oversaw the <b>Programming Department</b> as <b>Director of Programming. </b>
-                                            There, I oversaw the development of <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer"><b>The Avenir Innovations Website </b></a>
-                                            and developed software that <b>Allows Remote Control of a Quadrupedal Robot, </b>
-                                            software that <b>Processes LiDAR Data, Several Video Feeds,</b> and other <b>Sensor Data</b> in order to Put Together<b> a Map of it's surroundings, </b>
-                                            software that allows <b>Remote Monitoring</b> of the Robot, and more.
+                                            There, I oversaw the development of 
+                                            <a href="https://avenirinnovations.com" target="_blank" rel="noopener noreferrer">
+                                            <b> the Avenir Innovations website </b></a>
+                                            and developed software that <b>facilitates remote control of a quadrupedal robot, </b>
+                                            software that <b>processes LiDAR Data, several video feeds,</b> and other sensor data in order to put together<b> a map of it's surroundings, </b>
+                                            software that allows <b>remote monitoring</b> of the robot, and more.
                                         </p>
-                                        <h4 className='langHeader'>Relevent Skills</h4>
+                                        <h4 className='langHeader'>Relevant Skills</h4>
                                         <div className='langSection' style={{display: "inline-block"}}>
                                             <img className='langImg' src={C_Sharp_Logo}/>
                                             <img className='langImg' src={Cpp_Logo}/>
@@ -155,14 +157,15 @@ function App() {
                                 <div className='center' style={{paddingTop: "2vh"}}>
                                     <div className='text-center' style={{display: "block"}} >
                                         <h3 className='ProjectHeader'>
-                                            Machiaveli
+                                            Machiavelli
                                         </h3>
                                         <p className='ProjectText'>
-                                            <a href="https://github.com/TheUnnamedPerson/EU4-Modding-Tool" target="_blank" rel="noopener noreferrer"><b>Machiaveli </b></a>
-                                            is a <b>Modding Tool</b> for the video game Europa Universalis IV built using <b>Avalonia,</b> a Modernized Version of <b>WPF. </b>
-                                            Functionality Needed in order to create this included <b>Parsing a Custom Scripting Language, Analysing Bitmaps,</b> and <b>Editing Data Stored Across a Large Amount of Files.</b> 
+                                            <a href="https://github.com/TheUnnamedPerson/EU4-Modding-Tool" target="_blank" rel="noopener noreferrer">
+                                            <b>Machiavelli </b></a>
+                                            is a <b>modding tool</b> for the video game Europa Universalis IV built using <b>Avalonia,</b> a Modernized Version of <b>WPF. </b>
+                                            Functionality needed for this project includes <b>parsing a custom scripting language, analyzing bitmaps,</b> and <b>editing data stored across a large amount of files.</b> 
                                         </p>
-                                        <h4 className='langHeader'>Relevent Skills</h4>
+                                        <h4 className='langHeader'>Relevant Skills</h4>
                                         <div className='langSection' style={{display: "inline-block"}}>
                                             <img className='langImg' src={C_Sharp_Logo}/>
                                             <img className='langImg' src={DOT_NET_Logo}/>
@@ -186,14 +189,15 @@ function App() {
                                             Battle Royale Simulator
                                         </h3>
                                         <p className='ProjectText'>
-                                            <a href="https://github.com/TheUnnamedPerson/Battle-Royale-Simulator" target="_blank" rel="noopener noreferrer"><b>Battle Royale Simulator </b></a>
+                                            <a href="https://github.com/TheUnnamedPerson/Battle-Royale-Simulator" target="_blank" rel="noopener noreferrer">
+                                            <b>Battle Royale Simulator </b></a>
                                             is an older project of mine that I built using <b>UWP. </b>
                                             Based on <a href="https://brantsteele.net/hungergames/disclaimer.php" target="_blank" rel="noopener noreferrer">Brantsteele's Hunger Games Simulator, </a>
-                                            I rebuilt it multiple times with increased functionality such as character properties and Gaussian Distribution for events. Initial versions were made in <b>Unity 3D, </b> but I eventually moved it to <b>UWP. </b>
-                                            Relevent functionality includes <b>Reading and Writing to an XML Database, </b> usage of various
-                                            <b> Statistical Functions </b> to account for more probably events, and a <b>MVC</b> architecture.
+                                            I rebuilt it multiple times with increased functionality such as character properties and Gaussian normal distribution for events. Initial versions were made in <b>Unity 3D, </b> but I eventually switched to <b>UWP. </b>
+                                            Relevant functionality includes <b>reading and writing to an XML database, </b> usage of various
+                                            <b> statistical functions </b> to account for more probable events, and an <b>MVC</b> architecture.
                                         </p>
-                                        <h4 className='langHeader'>Relevent Skills</h4>
+                                        <h4 className='langHeader'>Relevant Skills</h4>
                                         <div className='langSection' style={{display: "inline-block"}}>
                                             <img className='langImg' src={C_Sharp_Logo}/>
                                             <img className='langImg' src={DOT_NET_Logo}/>
@@ -214,15 +218,15 @@ function App() {
                                             I have various other projects that I have worked on. I did <b>Levels 1-4 of Google's Foo Bar in Java, </b>
                                             I have made a
                                             <a href="https://github.com/TheUnnamedPerson/Canvas-plus-plus" target="_blank" rel="noopener noreferrer">
-                                            <b> Website</b> that interacts with Canvas LMS's <b>RestfulAPI</b> that handles <b>Account Data using Django, </b></a>
+                                            <b> Website</b> that interacts with Canvas LMS's <b>RestfulAPI</b> that handles <b>account data </b>using<b> Django, </b></a>
                                             The website you are currently looking at is made using <b>React, </b>
                                             and I have been making games in <b>Unity 3D</b> since middle school, among many other projects. 
-                                            You can find a few of my projects on
+                                            You can find a few of my projects on my
                                             <a href="https://github.com/TheUnnamedPerson/" target="_blank" rel="noopener noreferrer">
-                                            <b> My Github, </b></a>
-                                            although I still am working through searching old hard drives for various more projects that I've done so that I can upload them.
+                                            <b> Github page, </b></a>
+                                            although I am still working through searching old hard drives for various more projects that I've done so that I can upload them.
                                         </p>
-                                        <h4 className='langHeader'>Relevent Skills</h4>
+                                        <h4 className='langHeader'>Relevant Skills</h4>
                                         <div className='langSection' style={{display: "inline-block"}}>
                                             <img className='langImg' src={Java_Logo}/>
                                             <img className='langImg' src={Python_Logo}/>
